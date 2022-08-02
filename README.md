@@ -70,4 +70,5 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
+The images and information in this project is taken from [TVMaze](https://www.tvmaze.com/api).
 This project is [MIT](./MIT.md) licensed.
