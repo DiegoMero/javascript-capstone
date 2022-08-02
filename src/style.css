@@ -1,13 +1,13 @@
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav{
+.nav {
   display: flex;
 }
 
-.nav p{
-  margin: 0rem 1rem;;
+.nav p {
+  margin: 0 1rem;
 }
