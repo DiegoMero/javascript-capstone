@@ -19,3 +19,17 @@ footer div {
   padding: 5px;
   border-top: 3px solid black;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav p {
+  margin: 0 1rem;
+}
