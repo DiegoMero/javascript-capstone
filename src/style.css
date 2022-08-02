@@ -33,3 +33,48 @@ footer div {
   padding: 5px;
   border-top: 3px solid black;
 }
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem auto;
+  width: 100%;
+}
+
+.card {
+  width: 30.333%;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  border-radius: 10%;
+}
+
+.image {
+  width: 27rem;
+  height: 10rem;
+  margin: 0.5rem auto;
+  border-radius: 2rem;
+}
+
+.imgs {
+  width: 24rem;
+  height: 9rem;
+}
+
+.nameMovie {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.namedMovies {
+  margin: 0;
+}
+
+.btnsComRres {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
