@@ -1,3 +1,13 @@
-body {
-  color: black;
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav{
+  display: flex;
+}
+
+.nav p{
+  margin: 0rem 1rem;;
 }
