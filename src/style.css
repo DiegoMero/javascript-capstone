@@ -43,7 +43,6 @@ footer div {
 }
 
 .card {
-  width: 30;
   background-color: aquamarine;
   display: flex;
   flex-direction: column;
@@ -84,7 +83,7 @@ footer div {
 .big-view-body {
   position: fixed;
   top: 7%;
-  left:33%;
+  left: 33%;
   background-color: white;
   display: flex;
   align-items: center;

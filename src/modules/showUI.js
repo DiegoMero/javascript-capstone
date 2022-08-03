@@ -36,8 +36,3 @@ const shoWUI = (title, image) => {
 };
 
 export default shoWUI; */
-/* const showCard = (title, image, genres, premiered, rating) => {
-  const bigView = document.createElement('body');
-  bigView.className = 'big-view-body';
-  body.appenChild()
-}; */
