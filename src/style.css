@@ -13,7 +13,6 @@
 }
 
 body {
-  color: black;
   margin: 0;
 }
 
@@ -39,10 +38,12 @@ footer div {
   flex-wrap: wrap;
   margin: 5rem auto;
   width: 100%;
+  justify-content: center;
+  gap: 25px;
 }
 
 .card {
-  width: 30.333%;
+  width: 30;
   background-color: aquamarine;
   display: flex;
   flex-direction: column;
@@ -51,10 +52,11 @@ footer div {
 }
 
 .image {
-  width: 27rem;
-  height: 10rem;
+  width: auto;
+  height: auto;
   margin: 0.5rem auto;
   border-radius: 2rem;
+  padding: 15px;
 }
 
 .imgs {
@@ -77,4 +79,35 @@ footer div {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.big-view-body {
+  position: fixed;
+  top: 7%;
+  left:33%;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-right: 2%;
+}
+
+.popupCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.img-container {
+  display: flex;
+  gap: 5px;
+}
+
+.description-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 15px;
 }
