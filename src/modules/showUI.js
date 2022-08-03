@@ -1,4 +1,4 @@
-const mainPage = document.querySelector('.main');
+/* const mainPage = document.querySelector('.main');
 // show card dynamically
 const shoWUI = (title, image) => {
   const div1 = document.createElement('div');
@@ -25,7 +25,7 @@ const shoWUI = (title, image) => {
   const div5 = document.createElement('div');
   div5.className = 'btnsComRres';
   const btn = document.createElement('button');
-  btn.className = 'btn btnComment';
+  btn.className = 'btnComment';
   btn.textContent = 'comment';
   div5.appendChild(btn);
   div4.append(iE1, span1, pE2);
@@ -35,4 +35,4 @@ const shoWUI = (title, image) => {
   mainPage.appendChild(div1);
 };
 
-export default shoWUI;
+export default shoWUI; */
