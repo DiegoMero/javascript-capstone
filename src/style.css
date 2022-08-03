@@ -85,12 +85,13 @@ footer div {
   position: fixed;
   top: 7%;
   left:33%;
-  background-color: gray;
+  background-color: white;
   display: flex;
   align-items: center;
   padding-left: 5%;
   padding-top: 2%;
   padding-right: 2%;
+  border: 5px solid black;
 }
 
 .popupCard {
