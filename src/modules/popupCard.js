@@ -60,12 +60,54 @@ const popupCard = async (limitLength, i) => {
   const commentsContainer = document.createElement('ul');
   commentsContainer.className = 'comments-container';
   popupCard.appendChild(commentsContainer);
+
   const comments = await getComments(i);
   for (let i = 0; i < comments.length; i += 1) {
     const commentText = document.createElement('li');
     commentsContainer.appendChild(commentText);
     commentText.textContent = `${comments[i].creation_date} ${comments[i].username}: ${comments[i].comment}`;
   }
+
+  const addCommentTitle = document.createElement('h4');
+  addCommentTitle.textContent = 'Add a commment';
+  addCommentTitle.className = 'add-comment-title';
+  popupCard.appendChild(addCommentTitle);
+
+  const commentsInput = document.createElement('div');
+  commentsInput.className = 'comments-input';
+  popupCard.appendChild(commentsInput);
+
+  const nameInput = document.createElement('input');
+  nameInput.className = 'name-input';
+  nameInput.placeholder = 'Your name';
+  commentsInput.appendChild(nameInput);
+
+  const insightsInput = document.createElement('input');
+  insightsInput.className = 'insights-input';
+  insightsInput.placeholder = 'Your insights';
+  commentsInput.appendChild(insightsInput);
+
+  const commentButton = document.createElement('button');
+  commentButton.textContent = 'Comment';
+  commentButton.className = 'comment-button';
+  commentsInput.appendChild(commentButton);
+
+  const clickToComment = document.querySelector('.comment-button');
+
+  clickToComment.addEventListener('click', async (e) => {
+    e.preventDefault();
+    await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/fyapNUEEWHEUs0ltmiAA/comments', {
+      method: 'POST',
+      body: JSON.stringify({
+        item_id: i,
+        username: nameInput.value,
+        comment: insightsInput.value,
+      }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+  });
 };
 
 export default popupCard;
