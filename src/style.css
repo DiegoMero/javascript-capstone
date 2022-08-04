@@ -82,7 +82,7 @@ footer div {
 
 .big-view-body {
   position: fixed;
-  top: 7%;
+  top: 1%;
   left: 33%;
   background-color: white;
   display: flex;
@@ -104,10 +104,28 @@ footer div {
 .img-container {
   display: flex;
   gap: 5px;
+  height: 200px;
 }
 
 .description-container {
   display: grid;
   grid-template-columns: 50% 50%;
   column-gap: 15px;
+}
+
+.movie-title {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.comments-title {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.comments-container {
+  padding-left: 0;
 }
