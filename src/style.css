@@ -128,4 +128,14 @@ ul {
 
 .comments-container {
   padding-left: 0;
+  margin-top: 0;
+}
+
+.add-comment-title {
+  margin-top: 0;
+}
+
+.comments-input {
+  display: flex;
+  flex-direction: column;
 }
