@@ -1,4 +1,5 @@
 import getComments from './getComments.js';
+import getNumberComments from './getNumberOfComments.js';
 
 const popupCard = async (limitLength, i) => {
   const body = document.querySelector('body');
@@ -52,9 +53,11 @@ const popupCard = async (limitLength, i) => {
   }
   descriptionContainer.appendChild(ended);
 
+  const commentCounter = await getNumberComments(i);
+
   const commentTitle = document.createElement('h3');
   commentTitle.className = 'comments-title';
-  commentTitle.textContent = 'Comments';
+  commentTitle.textContent = `Comments (${commentCounter})`;
   popupCard.appendChild(commentTitle);
 
   const commentsContainer = document.createElement('ul');
