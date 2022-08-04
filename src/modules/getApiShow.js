@@ -1,13 +1,16 @@
 import popupCard from './popupCard.js';
 import { addApiLikes, getApiLikes } from './addlikeapi.js';
+import totalItems from './totalItems.js';
 
 const url = 'https://api.tvmaze.com/shows';
+const numberOfItems = document.querySelector('.totalitems');
 
 const getApiShow = async () => {
   const resolve = await fetch(url);
   const result = await resolve.json();
 
   const limitLength = result.slice(0, 20);
+  totalItems(limitLength.length, numberOfItems);
   for (let i = 0; i < limitLength.length; i += 1) {
     const mainPage = document.querySelector('.main');
     const div1 = document.createElement('div');
