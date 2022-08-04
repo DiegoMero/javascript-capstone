@@ -1,4 +1,5 @@
 import popupCard from './popupCard.js';
+import { addApiLikes, getApiLikes } from './addlikeapi.js';
 
 const url = 'https://api.tvmaze.com/shows';
 
@@ -17,18 +18,30 @@ const getApiShow = async () => {
     imgs.setAttribute('src', limitLength[i].image.medium);
     const div3 = document.createElement('div');
     div3.className = 'nameMovie';
+
     const pE1 = document.createElement('p');
     pE1.className = 'namedMovies';
     pE1.textContent = limitLength[i].name;
+
     const div4 = document.createElement('div');
     div4.className = 'likess';
+
     const iE1 = document.createElement('i');
     iE1.className = 'fa-regular fa-heart';
+
     const span1 = document.createElement('span');
     span1.className = 'numberLiked';
     const pE2 = document.createElement('p');
     pE2.className = 'likecount';
-    pE2.textContent = 'likes';
+    pE2.textContent = '0 likes';
+
+    getApiLikes(limitLength[i].name, pE2);
+
+    iE1.addEventListener('click', () => {
+      const { name } = limitLength[i];
+      addApiLikes(name);
+    });
+
     const div5 = document.createElement('div');
     div5.className = 'btnsComRres';
     const btn = document.createElement('button');
