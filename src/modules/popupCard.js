@@ -114,6 +114,18 @@ const popupCard = async (limitLength, i) => {
         'Content-Type': 'application/json',
       },
     });
+
+    const newArrayofComments = await getComments(i);
+    const commentText = document.createElement('li');
+    commentText.textContent = `${newArrayofComments[newArrayofComments.length - 1].creation_date} ${newArrayofComments[newArrayofComments.length - 1].username}: ${newArrayofComments[newArrayofComments.length - 1].comment}`;
+    commentsContainer.appendChild(commentText);
+
+    const newCommentsCounter = await getNumberComments(i);
+    if (newCommentsCounter === undefined) {
+      commentTitle.textContent = 'Comments (0)';
+    } else {
+      commentTitle.textContent = `Comments (${newCommentsCounter})`;
+    }
   });
 };
 
