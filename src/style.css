@@ -104,6 +104,7 @@ footer div {
 .img-container {
   display: flex;
   gap: 5px;
+  height: 200px;
 }
 
 .description-container {
@@ -115,10 +116,6 @@ footer div {
 .movie-title {
   margin-bottom: 0;
   margin-top: 5px;
-}
-
-.img-container {
-  height: 200px;
 }
 
 .comments-title {
