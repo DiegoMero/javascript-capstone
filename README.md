@@ -1,56 +1,53 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# SOLOVINO TV SHOWS
 
-> Description the project.
+> This project is a place where you can like and comment your favorites TV Shows.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- JavaScript, CSS, HTML.
+- Jest, Babel.
+- Visual Studio Code.
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://diegomero.github.io/javascript-capstone/dist/)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
+
+1. Open Git and go to the folder you want to clone this repo.
+
+2. Type git clone git@github.com:DiegoMero/javascript-capstone.git
+
+3. Now you can use this repo.
 
 ### Prerequisites
 
-### Setup
+You will only need a working pc.
 
 ### Install
 
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+Feel free to fork this repo!
 
 ## Authors
 
-👤 **Author1**
+👤 **Aneal Laryea**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+* Github: [@aneallaryea](https://github.com/aneallaryea100)
+* LinkdIn: [@aneallaryea](https://www.linkedin.com/in/nii-aneal-84ba7a147)
+* Twitter: [@aneallaryea](https://twitter.com/AnealLaryea)
 
-👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Diego Mero**
+
+- GitHub: [@githubhandle](https://github.com/DiegoMero)
+- Twitter: [@twitterhandle](https://twitter.com/Dimero18)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/diego-mero-80b326225/)
 
 ## 🤝 Contributing
 
@@ -64,9 +61,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- We got inspired by the microverse template for this project.
 
 ## 📝 License
 
