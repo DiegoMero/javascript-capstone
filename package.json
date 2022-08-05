@@ -4,7 +4,7 @@
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "webpack serve --open",
     "build": "webpack"
   },
@@ -32,6 +32,7 @@
     "hint": "^7.1.1",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^28.1.3",
+    "jest-fetch-mock": "^3.0.3",
     "style-loader": "^3.3.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
@@ -42,6 +43,18 @@
     "webpack-dev-server": "^4.9.3"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "babel-jest": "^28.1.3",
+    "electron-webpack-boilerplate": "^1.0.5",
+    "jest": "^28.1.3",
+    "jest-environment-jsdom": "^28.1.3",
+    "lodash": "^4.17.21",
+    "node-fetch": "^3.2.10",
+    "ts-jest": "^28.0.7"
+  },
+  "jest": {
+    "automock": false,
+    "setupFiles": [
+      "./setupJest.js"
+    ]
   }
 }
