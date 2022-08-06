@@ -20,7 +20,7 @@ const popupCard = async (limitLength, i) => {
   imgContainer.appendChild(movieImg);
 
   const xIcon = document.createElement('i');
-  xIcon.className = 'fa-solid fa-x';
+  xIcon.className = 'fa-solid fa-x closes';
   xIcon.addEventListener('click', () => { body.removeChild(bigView); });
   imgContainer.appendChild(xIcon);
 
@@ -76,7 +76,7 @@ const popupCard = async (limitLength, i) => {
   }
 
   const addCommentTitle = document.createElement('h4');
-  addCommentTitle.textContent = 'Add a commment';
+  addCommentTitle.textContent = 'Add a comment';
   addCommentTitle.className = 'add-comment-title';
   popupCard.appendChild(addCommentTitle);
 
@@ -89,8 +89,10 @@ const popupCard = async (limitLength, i) => {
   nameInput.placeholder = 'Your name';
   commentsInput.appendChild(nameInput);
 
-  const insightsInput = document.createElement('input');
+  const insightsInput = document.createElement('textarea');
   insightsInput.className = 'insights-input';
+  insightsInput.setAttribute('rows', '6');
+  insightsInput.setAttribute('cols', '30');
   insightsInput.placeholder = 'Your insights';
   commentsInput.appendChild(insightsInput);
 

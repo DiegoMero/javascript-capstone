@@ -157,14 +157,36 @@ ul {
   align-items: flex-start;
 }
 
-.likeChange{
+.likeChange {
   color: yellow;
   background-color: greenyellow;
 }
 
-.holdlikess{
+.holdlikess {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.2rem;
+}
+
+.closes {
+  color: red;
+  position: absolute;
+  right: 1.5rem;
+  top: 0.5rem;
+  background-color: blueviolet;
+  padding: 0.5rem;
+  border-radius: 1.9rem;
+}
+
+.comment-button {
+  width: 100%;
+}
+
+.name-input {
+  width: 100%;
+}
+
+.insights-input {
+  width: 100%;
 }
