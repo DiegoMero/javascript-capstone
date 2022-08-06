@@ -60,10 +60,8 @@ Feel free to check the [issues page](../../issues/).
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
+- The images and information in this project is taken from [TVMaze](https://www.tvmaze.com/api).
 - We got inspired by the microverse template for this project.
 
 ## 📝 License
-
-The images and information in this project is taken from [TVMaze](https://www.tvmaze.com/api).
 This project is [MIT](./MIT.md) licensed.

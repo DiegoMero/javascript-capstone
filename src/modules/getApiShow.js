@@ -32,17 +32,25 @@ const getApiShow = async () => {
     const iE1 = document.createElement('i');
     iE1.className = 'fa-regular fa-heart';
 
-    const span1 = document.createElement('span');
-    span1.className = 'numberLiked';
+    const div55 = document.createElement('div');
+    div55.className = 'holdlikess';
+
     const pE2 = document.createElement('p');
     pE2.className = 'likecount';
-    pE2.textContent = '0 likes';
+    pE2.innerHTML = '';
+
+    const span1 = document.createElement('span');
+    span1.className = 'numberLiked';
+    span1.innerHTML = 'likes';
 
     getApiLikes(limitLength[i].name, pE2);
 
-    iE1.addEventListener('click', () => {
+    iE1.addEventListener('click', async () => {
       const { name } = limitLength[i];
-      addApiLikes(name);
+      await getApiLikes(name.name, pE2);
+      await addApiLikes(name);
+      iE1.classList.add('likeChange');
+      pE2.innerHTML = Number(pE2.innerHTML) + 1;
     });
 
     const div5 = document.createElement('div');
@@ -51,7 +59,8 @@ const getApiShow = async () => {
     btn.className = 'btnComment';
     btn.textContent = 'comment';
     div5.appendChild(btn);
-    div4.append(iE1, span1, pE2);
+    div55.append(pE2, span1);
+    div4.append(iE1, div55);
     div3.append(pE1, div4);
     div2.appendChild(imgs);
     div1.append(div2, div3, div5);

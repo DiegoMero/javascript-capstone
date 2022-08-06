@@ -156,3 +156,15 @@ ul {
   margin-bottom: 10px;
   align-items: flex-start;
 }
+
+.likeChange{
+  color: yellow;
+  background-color: greenyellow;
+}
+
+.holdlikess{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
