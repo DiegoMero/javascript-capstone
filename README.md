@@ -4,6 +4,9 @@
 
 > This project is a place where you can like and comment your favorites TV Shows.
 
+# Image Preview
+![solovinotv](./src/images/solotvnew.png)
+
 
 ## Built With
 
