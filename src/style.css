@@ -1,0 +1,192 @@
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.logo span {
+  font-size: 40px;
+  color: rgb(19, 3, 110);
+}
+
+.nav {
+  display: flex;
+}
+
+.nav p {
+  margin: 0 1rem;
+}
+
+footer {
+  border: 3px solid black;
+}
+
+.authors {
+  font-size: large;
+  padding-left: 5px;
+}
+
+footer div {
+  background-color: #b9b9b1;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+  border-top: 3px solid black;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem auto;
+  width: 100%;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 0;
+}
+
+.card {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  border-radius: 10%;
+  align-items: center;
+}
+
+.image {
+  width: auto;
+  height: auto;
+  margin: 0.5rem auto;
+  border-radius: 2rem;
+  padding: 15px;
+}
+
+.imgs {
+  width: 24rem;
+  height: 9rem;
+}
+
+.nameMovie {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2rem 0;
+  gap: 25px;
+}
+
+.namedMovies {
+  margin: 0;
+}
+
+.btnsComRres {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 10%;
+  width: 50%;
+}
+
+.big-view-body {
+  position: fixed;
+  top: 1%;
+  left: 33%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-right: 2%;
+  border: 5px solid black;
+}
+
+.popupCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.img-container {
+  display: flex;
+  gap: 5px;
+  height: 200px;
+}
+
+.description-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 15px;
+}
+
+.movie-title {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.comments-title {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.comments-container {
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.add-comment-title {
+  margin-top: 0;
+}
+
+.comments-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: flex-start;
+}
+
+.likeChange {
+  color: yellow;
+  background-color: greenyellow;
+}
+
+.holdlikess {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.closes {
+  color: red;
+  position: absolute;
+  right: 1.5rem;
+  top: 0.5rem;
+  background-color: blueviolet;
+  padding: 0.5rem;
+  border-radius: 1.9rem;
+}
+
+.comment-button {
+  width: 100%;
+}
+
+.name-input {
+  width: 100%;
+}
+
+.insights-input {
+  width: 100%;
+}
